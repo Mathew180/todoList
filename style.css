@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todoInput{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: white;
+    padding: 13px;
+    font-weight: bold;
+}
+
+.todoButton{
+    height: 30px;
+    width: 50px;
+    background: white;
+    outline: none;
+    border: none;
+    box-shadow: 1px 4px 8px lightblue;
+    color: blue;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.todoButton:hover{
+    transform: translate(360deg);
+    transition: .9s;
+}
+
+.todoContainer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.todo{
+    width: 300px;
+    color : rgb(0, 68, 255);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     margin-bottom: 15px;
+
+}
+
+.todoItem{
+    flex: 1;
+    background: rgb(255, 255, 255);
+    padding : 10px;
+}
+
+.delTodo{
+    width: 30px;
+    padding : 5px;
+    background: white;
+    outline: none;
+    border: none;
+    box-shadow: 1px 4px 8px lightblue;
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+
+}
