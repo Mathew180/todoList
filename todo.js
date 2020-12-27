@@ -24,8 +24,9 @@ function addTodo(event){
     todoDiv.appendChild(todoItem);
 
 
-       //ADDTODO TO LOCALSTORAGE
-       saveLocalTodos(todoInput.value)
+    
+    //ADDTODO TO LOCALSTORAGE
+    saveLocalTodos(todoInput.value)
   
    //Delete button
      const delTodo = document.createElement('button');
@@ -60,14 +61,15 @@ function saveLocalTodos(todo){
 }
 
 function getTodos(){
-    let todos;
 
+    let todos;
+ 
     if(localStorage.getItem('todos') === null){
         todos = [];
     }else{
         todos = JSON.parse(localStorage.getItem("todos"));
     }
-    
+  
     todos.forEach(function(todo){
      //TODO DIV
      const todoDiv = document.createElement('div');
@@ -88,7 +90,6 @@ function getTodos(){
  
       //APPEND TO LIST
       todoList.appendChild(todoDiv);
- 
-    })
+    });
 }
 
